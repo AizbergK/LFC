@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9f29bd9a-c175-447f-ae0a-d292ecf4e2d1}</ProjectGuid>
-    <RootNamespace>ExempluFisier</RootNamespace>
+    <ProjectGuid>{bc01a075-885c-485b-b776-b1d8e650b6bf}</ProjectGuid>
+    <RootNamespace>Tema2</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Tema1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -130,22 +129,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ADF.cpp" />
+    <ClCompile Include="Delta.cpp" />
     <ClCompile Include="Source.cpp" />
-    <ClCompile Include="Gramatica.cpp" />
-    <ClCompile Include="Productie.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Gramatica.h" />
-    <ClInclude Include="Productie.h" />
+    <Text Include="input.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="input1.txt" />
-    <Text Include="input2.txt" />
-    <Text Include="intersectienevida.txt" />
-    <Text Include="prodcunotvnvt.txt" />
-    <Text Include="prodfarastart.txt" />
-    <Text Include="prodfaravn.txt" />
-    <Text Include="startnotvn.txt" />
+    <ClInclude Include="ADF.h" />
+    <ClInclude Include="Delta.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
