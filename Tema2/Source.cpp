@@ -1,12 +1,12 @@
-#include "ADF.h"
+#include "AFD.h"
 
 int main()
 {
 	AFD afd;
 	afd.Citire("./input.txt");
-	char user_choice = 'Y';
+	char user_choice;
 	std::string cuvant_introdus;
-	while (user_choice == 'Y')
+	do
 	{
 		std::cout << "Indroduceti un cuvant pentru testat:\n";
 		std::cin >> cuvant_introdus;
@@ -17,6 +17,8 @@ int main()
 			std::cin >> user_choice;
 		} 
 		while (user_choice != 'Y' && user_choice != 'N');
-	}
+	} 
+	while (user_choice == 'Y');
+
 	return 0;
 }

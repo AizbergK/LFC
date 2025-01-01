@@ -1,4 +1,4 @@
-#include "ADF.h"
+#include "AFD.h"
 #include "Delta.h"
 
 void AFD::Citire(std::string path)
@@ -18,7 +18,7 @@ void AFD::Citire(std::string path)
 	str_ipt.str(line);
 	str_ipt >> this->StareInitiala;
 
-	std::getline(input, line); // nr de stari finale
+	std::getline(input, line);
 	std::getline(input, line); // starile finale
 	str_ipt.clear();
 	str_ipt.str(line);
@@ -37,8 +37,8 @@ void AFD::Citire(std::string path)
 		Sigma.emplace_back(ch);
 	}
 
-	std::getline(input, line); // nr de tranzitii
-	while (std::getline(input, line))
+	std::getline(input, line);
+	while (std::getline(input, line)) // tranzitiile
 	{
 		str_ipt.clear();
 		str_ipt.str(line);
@@ -63,6 +63,10 @@ void AFD::AfisareAFD()
 	std::cout << "Starile finale ale automatului definit:\n{";
 	for (auto& stare : this->StariFinale)
 		std::cout << stare << ", ";
+	std::cout << "\b\b}\n";
+	std::cout << "Simboluri ale automatului definit:\n{";
+	for (auto& simb : this->Sigma)
+		std::cout << simb << ", ";
 	std::cout << "\b\b}\n";
 	std::cout << "Tranzitiile automatului definit\n";
 	for (auto& tranzitie : this->Delta)

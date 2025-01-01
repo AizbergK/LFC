@@ -1,0 +1,16 @@
+M' = { {q0, q1, q2, q3, q4, q5, q6}, {1, 0}, Delta, q0, {q2, q5, q6} }
+Delta:
+	Delta(q0, 0) = q4
+	Delta(q0, 1) = q3
+	Delta(q1, 0) = q0
+	Delta(q1, 1) = q2
+	Delta(q2, 0) = q5
+	Delta(q2, 1) = q2
+	Delta(q3, 0) = q3
+	Delta(q3, 1) = q3
+	Delta(q4, 0) = q4
+	Delta(q4, 1) = q2
+	Delta(q5, 0) = q6
+	Delta(q5, 1) = q2
+	Delta(q6, 0) = q6
+	Delta(q6, 1) = q2
